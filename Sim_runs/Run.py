@@ -35,7 +35,7 @@ for plasmid_flag in range(1):
 			for eR_on_id in range(len(eR_on_val)):
 				for topo_id in range(len(topo_val)):
 					for eR_off_id in range(len(eR_off_val)):
-						for PQS_id in range(2):
+						for PQS_id in range(len(PQS_flag)):
 							folder_0 = 'outputfiles/RUN_' + str(plasmid_flag) + '_' + str(promoter_flag[promoter_id]) + '_' + str(GQ_on_id) + '_' + str(eR_on_id) + '_' + str(topo_id) + '_' + str(eR_off_id) + '_' + str(PQS_id)
 							folder_1 = 'inputfiles/RUN_' + str(plasmid_flag) + '_' + str(promoter_flag[promoter_id]) + '_' + str(GQ_on_id) + '_' + str(eR_on_id) + '_' + str(topo_id) + '_' + str(eR_off_id) + '_' + str(PQS_id)
 							if not Path(folder_0).is_dir():
@@ -49,7 +49,7 @@ for plasmid_flag in range(1):
 							ss=' '.join(A)
 							print(f'mpirun ./Run_sim configs/test.config', ss)  
        
-							slurm_out = subprocess.run(['mpirun', './Run_sim', 'configs/test.config', str(restart_flag), str(plasmid_flag), str(promoter_flag[promoter_id]), str(GQ_on_id), str(GQ_on_val[GQ_on_id]), str(eR_on_id), str(eR_on_val[eR_on_id]), str(topo_id), str(topo_val[topo_id]), str(eR_off_id), str(eR_off_val[eR_off_id]), str(PQS_flag[PQS_id]), str(start_rank)], capture_output = True, text = True)
+							slurm_out = subprocess.run(['mpirun', './Run_Sim_bin', 'configs/test.config', str(restart_flag), str(plasmid_flag), str(promoter_flag[promoter_id]), str(GQ_on_id), str(GQ_on_val[GQ_on_id]), str(eR_on_id), str(eR_on_val[eR_on_id]), str(topo_id), str(topo_val[topo_id]), str(eR_off_id), str(eR_off_val[eR_off_id]), str(PQS_flag[PQS_id]), str(start_rank)], capture_output = True, text = True)
 							print(slurm_out.stdout, end = '')
             				
 							#submission_count += 1
