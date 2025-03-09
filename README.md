@@ -3,6 +3,11 @@
 ## Overview
 This repository contains a computational model to simulate the coupling of RNA Polymerase (RNAP) recruitment and translocation with DNA supercoiling. The model captures the interplay between transcription, transient R-loop formation, G-quadruplex (G4) structures, and their effects on promoter supercoiling and transcription regulation. The simulation explores how the dynamic interactions between these elements influence transcription initiation and suppression.
 
+## Reference
+DNA supercoiling-mediated G4/R-loop formation
+tunes transcription by controlling the access of RNA
+polymerase (Hwang et al. 2024) https://doi.org/10.21203/rs.3.rs-4405653/v1
+
 ![Model Schematic](images/model-1.png)
 
 ## Model Description
@@ -12,8 +17,6 @@ The model simulates a negatively supercoiled plasmid with a single gene and cons
 - **G4 Structure Formation**: If G4-forming sequences (PQS) are present, the transient R-loop can nucleate a G4 state, stabilizing the R-loop and further repressing transcription.
 - **Supercoiling Dynamics**: The model includes plectoneme relaxation events to simulate supercoiling redistribution along the DNA.
 - **Parameter Tuning**: The model explores different rates of R-loop and G4 formation to identify transcriptional suppression regimes.
-
-For detailed theoretical background and comparison with experimental observations, refer to the model documentation.
 
 ## Installation & Compilation
 ### Prerequisites
@@ -59,9 +62,6 @@ The following scripts can be used for plotting:
 - **`plot_Txp_Rloop_G4.ipynb`**: Analyzes and visualizes transcription and R-loop/G4 formation dynamics.
 - **`plot_promoter_supercoiling.ipynb`**: Generates plots showing the evolution of promoter supercoiling.
 
-## References
-DNA supercoiling-mediated G4/R-loop formation
-tunes transcription by controlling the access of RNA
-polymerase (Hwang et al. 2024) https://doi.org/10.21203/rs.3.rs-4405653/v1
+
 
 
