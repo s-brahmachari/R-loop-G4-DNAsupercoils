@@ -60,10 +60,9 @@ The following scripts can be used for plotting:
 - **`plot_promoter_supercoiling.ipynb`**: Generates plots showing the evolution of promoter supercoiling.
 
 ## References
-If using this model in your research, please cite relevant literature associated with transcriptional regulation, R-loops, and DNA supercoiling.
-
-For further details on the experimental comparisons and theoretical framework, refer to the corresponding publication.
-
+DNA supercoiling-mediated G4/R-loop formation
+tunes transcription by controlling the access of RNA
+polymerase (Hwang et al. 2024) https://doi.org/10.21203/rs.3.rs-4405653/v1
 ## Contact
 For questions or contributions, please reach out to the repository maintainers.
 
