@@ -3,7 +3,7 @@
 ## Overview
 This repository contains a computational model to simulate the coupling of RNA Polymerase (RNAP) recruitment and translocation with DNA supercoiling. The model captures the interplay between transcription, transient R-loop formation, G-quadruplex (G4) structures, and their effects on promoter supercoiling and transcription regulation. The simulation explores how the dynamic interactions between these elements influence transcription initiation and suppression.
 
-![Model Schematic](images/model.png)
+<img src="images/model_schematic.png" alt="Model Schematic" width="400">
 
 ## Model Description
 The model simulates a negatively supercoiled plasmid with a single gene and considers the following key processes:
